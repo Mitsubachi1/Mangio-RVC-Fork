@@ -9,6 +9,9 @@ usefp16 = False
 
 def decide_fp_config():
     global usefp16
+
+
+def use_fp32_config():
     usefp16 = False
     device_capability = 0
     if torch.cuda.is_available():
